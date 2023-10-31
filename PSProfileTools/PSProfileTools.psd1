@@ -69,65 +69,78 @@ Description = 'Utilities for managing PowerShell $PROFILE'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = '*'
+	FunctionsToExport = @(
+		'ConvertTo-X509Certificate'
+		'Get-Completion'
+		'Get-EnvironmentVariable'
+		'Get-EnvironmentVariableNames'
+		'Get-SystemTrayIcon'
+		'Import-Certificate'
+		'Set-SystemTrayIcon'
+		'Test-Command'
+		'Update-SessionEnvironment'
+	)
 
-# Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-CmdletsToExport = '*'
+	# Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
+	# CmdletsToExport = '*'
 
-# Variables to export from this module
-VariablesToExport = '*'
+	# Variables to export from this module
+	# VariablesToExport = '*'
 
-# Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-AliasesToExport = '*'
+	# Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
+	AliasesToExport   = @(
+		'has'
+		'Get-EnvVar'
+		'Get-EnvVarNames'
+		'refreshenv'
+	)
 
-# DSC resources to export from this module
-# DscResourcesToExport = @()
+	# DSC resources to export from this module
+	# DscResourcesToExport = @()
 
-# List of all modules packaged with this module
-# ModuleList = @()
+	# List of all modules packaged with this module
+	# ModuleList = @()
 
-# List of all files packaged with this module
-# FileList = @()
+	# List of all files packaged with this module
+	# FileList = @()
 
-# Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
-PrivateData = @{
+	# Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
+	PrivateData       = @{
 
-    PSData = @{
+		PSData = @{
 
-        # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+			# Tags applied to this module. These help with module discovery in online galleries.
+			# Tags = @()
 
-        # A URL to the license for this module.
-        # LicenseUri = ''
+			# A URL to the license for this module.
+			# LicenseUri = ''
 
-        # A URL to the main website for this project.
-        # ProjectUri = ''
+			# A URL to the main website for this project.
+			# ProjectUri = ''
 
-        # A URL to an icon representing this module.
-        # IconUri = ''
+			# A URL to an icon representing this module.
+			# IconUri = ''
 
-        # ReleaseNotes of this module
-        # ReleaseNotes = ''
+			# ReleaseNotes of this module
+			# ReleaseNotes = ''
 
-        # Prerelease string of this module
-        # Prerelease = ''
+			# Prerelease string of this module
+			# Prerelease = ''
 
-        # Flag to indicate whether the module requires explicit user acceptance for install/update/save
-        # RequireLicenseAcceptance = $false
+			# Flag to indicate whether the module requires explicit user acceptance for install/update/save
+			# RequireLicenseAcceptance = $false
 
-        # External dependent modules of this module
-        # ExternalModuleDependencies = @()
+			# External dependent modules of this module
+			# ExternalModuleDependencies = @()
 
-    } # End of PSData hashtable
+		} # End of PSData hashtable
 
-} # End of PrivateData hashtable
+	} # End of PrivateData hashtable
 
-# HelpInfo URI of this module
-# HelpInfoURI = ''
+	# HelpInfo URI of this module
+	# HelpInfoURI = ''
 
-# Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.
-# DefaultCommandPrefix = ''
+	# Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.
+	# DefaultCommandPrefix = ''
 
 }
-
-
