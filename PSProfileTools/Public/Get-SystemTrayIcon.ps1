@@ -5,6 +5,14 @@ function Get-SystemTrayIcon {
 
     .DESCRIPTION
         Get system tray icon visibility using the IconStreams value in the registry.
+
+    .PARAMETER Path
+        The path for the system tray icon. By default app paths are displayed.
+
+    .EXAMPLE
+        PS> Get-SystemTrayIcon -Path 'C:\Program Files\Microsoft VS Code\Code.exe'
+
+        Get the visibility of the VS Code system tray icon.
     #>
 
     [CmdletBinding()]

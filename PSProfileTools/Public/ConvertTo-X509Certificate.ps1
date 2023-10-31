@@ -13,13 +13,13 @@ function ConvertTo-X509Certificate {
     .PARAMETER Certificate
         One or more base64 encoded strings describing the certificate.
     .EXAMPLE
-        Get-ChildItem *.pem | ConvertTo-X509Certificate
+        PS> Get-ChildItem *.pem | ConvertTo-X509Certificate
 
-        # Converts all certificates stored in pem files to an X509Certificate2 object.
+        Converts all certificates stored in pem files to an X509Certificate2 object.
     .EXAMPLE
-        ConvertTo-X509Certificate -Path cert.cer
+        PS> ConvertTo-X509Certificate -Path cert.cer
 
-        # Converts the certificate stored in cert.cer to an X509Certificate2 object.
+        Converts the certificate stored in cert.cer to an X509Certificate2 object.
     .LINK
         https://gist.github.com/indented-automation/37b748056742d5e1b51f7cd767813f5d
     #>

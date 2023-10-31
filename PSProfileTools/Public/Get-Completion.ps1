@@ -6,17 +6,17 @@ Function Get-Completion {
         Get custom argument completers registered in the current session.
         By default Get-ArgumentCompleter lists all of the completers registered in the session.
     .EXAMPLE
-        Get-Completion
+        PS> Get-Completion
 
-        # Get all of the argument completers for PowerShell commands in the current session.
+        Get all of the argument completers for PowerShell commands in the current session.
     .EXAMPLE
-        Get-Completion -CommandName Invoke-ScriptAnalyzer
+        PS> Get-Completion -CommandName Invoke-ScriptAnalyzer
 
-        # Get all of the argument completers used by the Invoke-ScriptAnalyzer command.
+        Get all of the argument completers used by the Invoke-ScriptAnalyzer command.
     .EXAMPLE
-        Get-ArgumentCompleter -Native
+        PS> Get-ArgumentCompleter -Native
 
-        # Get all of the argument completers for native commands in the current session.
+        Get all of the argument completers for native commands in the current session.
     .LINK
         https://gist.github.com/indented-automation/26c637fb530c4b168e62c72582534f5b
     #>

@@ -7,9 +7,9 @@ Function Test-Command {
         .PARAMETER Command
             The Command to test/search for.
         .EXAMPLE
-            Test-Command aws
+            PS> Test-Command aws
 
-            # Tests if the command `aws` is available.
+            Tests if the command `aws` is available.
         .NOTES
             This function simply wraps the native `Get-Command` PowerShell CmdLet.
         .OUTPUTS

@@ -28,12 +28,12 @@ Function Update-SessionEnvironment {
 	.EXAMPLE
 	PS> Refresh-Environment
 
-	# Refresh the environment variables of the current PowerShell session.
+	Refresh the environment variables of the current PowerShell session.
 
 	.EXAMPLE
 	PS> refreshenv
 
-	# Refresh the environment variables of the current PowerShell session using the alias'refreshenv'.
+	Refresh the environment variables of the current PowerShell session using the alias'refreshenv'.
 
 	.LINK
 	https://github.com/chocolatey/choco/blob/develop/src/chocolatey.resources/helpers/functions/Update-SessionEnvironment.ps1

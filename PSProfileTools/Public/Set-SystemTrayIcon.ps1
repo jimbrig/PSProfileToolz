@@ -5,6 +5,20 @@ function Set-SystemTrayIcon {
 
     .DESCRIPTION
         Set system tray icon visibility using the IconStreams value in the registry.
+
+    .PARAMETER Path
+        The path for the system tray icon. By default app paths are displayed.
+
+    .PARAMETER InputObject
+        The icon streams record to update.
+
+    .PARAMETER Visibility
+        The visibility to set for the system tray icon.
+
+    .EXAMPLE
+        PS> Get-SystemTrayIcon -Path 'C:\Program Files\Microsoft VS Code\Code.exe' | Set-SystemTrayIcon -Visibility Hidden
+
+        Hide the VS Code system tray icon.
     #>
 
     [CmdletBinding()]

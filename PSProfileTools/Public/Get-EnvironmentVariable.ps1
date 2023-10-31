@@ -32,18 +32,17 @@ Function Get-EnvironmentVariable {
 	Allows splatting with arguments that do not apply. Do not use directly.
 
 	.EXAMPLE
-	Get-EnvironmentVariable -Name 'TEMP' -Scope User -PreserveVariables
+	PS> Get-EnvironmentVariable -Name 'TEMP' -Scope User -PreserveVariables
 
-	# Get the value of the TEMP environment variable from the user scope, preserving its value as registered in the registry.
+	Get the value of the TEMP environment variable from the user scope, preserving its value as registered in the registry.
 	.EXAMPLE
-	Get-EnvironmentVariable -Name 'PATH' -Scope Machine
+	PS> Get-EnvironmentVariable -Name 'PATH' -Scope Machine
 
-	# Get all environment variable names from the machine scope.
+	Get all environment variable names from the machine scope.
 	.EXAMPLE
-	Get-EnvironmentVariable -Name 'PATH' -Scope User -Split
+	PS> Get-EnvironmentVariable -Name 'PATH' -Scope User -Split
 
-	# Get all environment variable names from the user scope and split them by the `;` character onto separate lines.
-
+	Get all environment variable names from the user scope and split them by the `;` character onto separate lines.
 	.LINK
 	Get-EnvironmentVariableNames
 

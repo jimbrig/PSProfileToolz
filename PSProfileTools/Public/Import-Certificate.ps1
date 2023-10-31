@@ -20,9 +20,9 @@ function Import-Certificate {
         (Optional) The Computer Name to use for this query. If `ComputerName` is not specified `Import-Certificate` uses
         the current computer via `$env:ComputerName`.
     .EXAMPLE
-        Get-Certificate -StoreName My -ComputerName Server1 | Install-Certificate $Certificate -ComputerName Server2 -StoreName TrustedPeople
+        PS> Get-Certificate -StoreName My -ComputerName Server1 | Install-Certificate $Certificate -ComputerName Server2 -StoreName TrustedPeople
 
-        # Get certificates from the Personal (My) store of Server1 and install each into the TrustedPeople store of Server2.
+        Get certificates from the Personal (My) store of Server1 and install each into the TrustedPeople store of Server2.
     .LINK
         https://gist.github.com/indented-automation/37b748056742d5e1b51f7cd767813f5d
     #>
