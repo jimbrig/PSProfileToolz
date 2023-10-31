@@ -1,0 +1,7 @@
+{
+    "extends": "../../.markdownlint.json",
+    "first-line-heading": {
+        "level": 4
+    }
+}
+

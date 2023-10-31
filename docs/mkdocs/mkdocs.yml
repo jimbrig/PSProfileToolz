@@ -1,0 +1,4 @@
+site_name: docs.jimbrig.com/PSProfileTools
+repo_url: git@github.com:jimbrig/psprofiletools.git
+theme: readthedocs
+

@@ -1,0 +1,27 @@
+* -crlf
+
+# Basic .gitattributes for a PowerShell repo.
+
+# Source files
+# ============
+*.ps1      text merge=text diff=text eol=crlf
+*.psm1     text merge=text diff=text eol=crlf
+*.psd1     text merge=text diff=text eol=crlf
+*.ps1x     text eol=crlf
+*.ps1xml   text eol=crlf
+*.pssc     text eol=crlf
+*.psrc     text eol=crlf
+*.cdxml    text eol=crlf
+
+# XML
+# ===========
+*.xml      -text merge=text diff=text eol=crlf
+*.xsd      -text merge=text diff=text eol=crlf
+
+# Markdown
+# ===========
+*.md       text merge=text diff=text eol=crlf
+
+# JSON
+# ===========
+*.json     -text merge=json diff=text eol=crlf
