@@ -1,4 +1,14 @@
-site_name: docs.jimbrig.com/PSProfileTools
-repo_url: git@github.com:jimbrig/psprofiletools.git
+site_name: PSProfileToolz Documentation
+repo_url: https://github.com/jimbrig/PSProfileToolz
 theme: readthedocs
-
+docs_dir: docs
+site_dir: site
+plugins:
+  - search
+  # - mkdocs-versioning
+  # - mkdocs-material
+  # - mkdocs-minify-plugin
+  # - mkdocs-git-revision-date-localized-plugin
+  # - mkdocs-git-authors-plugin
+  # - mkdocs-git-authors-plugin
+  # - mkdocs
