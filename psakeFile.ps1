@@ -5,6 +5,6 @@ properties {
     $PSBPreference.Test.OutputFile = 'out/testResults.xml'
 }
 
-task Default -depends Test
+Task Default -depends Test
 
-task Test -FromModule PowerShellBuild -minimumVersion '0.6.1'
+Task Test -FromModule PowerShellBuild
