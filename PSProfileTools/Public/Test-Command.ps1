@@ -17,6 +17,7 @@ Function Test-Command {
     #>
     [CmdLetBinding()]
     [OutputType([Boolean])]
+	[Alias('has')]
     Param(
         [string]$Command
     )
