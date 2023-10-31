@@ -29,6 +29,9 @@ param(
     [parameter(ParameterSetName = 'Help')]
     [switch]$Help,
 
+	[Parameter(Mandatory = $false)]
+	[PSCredential]$PSGalleryApiKey,
+
     # Optional properties to pass to psake
     [hashtable]$Properties,
 
